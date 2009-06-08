@@ -15,15 +15,15 @@ and a section <code>s</code> with the following template:
 
 h2. Helper functions
 
-h3. <txp:egg_shorturl_link />
+h3. &lt;txp:egg_shorturl_link />
 
 Outputs a link element for the header area of your HTML document. (Empty on article list documents.)
 
-h3. <txp:egg_shorturl_a />
+h3. &lt;txp:egg_shorturl_a />
 
 Outputs a normal a href element to use in article context (eg. in your default form).
 
-h3. <txp:egg_shorturl_tweet />
+h3. &lt;txp:egg_shorturl_tweet />
 
 Outputs a link to twitter filling the textbox with the title and a link to your article. Parameters:
 
