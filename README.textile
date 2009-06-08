@@ -1,0 +1,32 @@
+h1. egg_shorturl
+
+This plugin needs to be used with following lines in your <kbd>.htaccess</kbd> file:
+
+<pre><code>RewriteEngine On
+RewriteRule ^(\d+)$ http://example.com/s/$1 [R=301,L]</code></pre>
+
+(with example.com = your domain)
+
+and a section <code>s</code> with the following template:
+
+<pre><code>&lt;txp:egg_shorturl_handler /></code></pre>
+
+*This plugin works only with the <code>/section/title</code> URL schema.*
+
+h2. Helper functions
+
+h3. <txp:egg_shorturl_link />
+
+Outputs a link element for the header area of your HTML document. (Empty on article list documents.)
+
+h3. <txp:egg_shorturl_a />
+
+Outputs a normal a href element to use in article context (eg. in your default form).
+
+h3. <txp:egg_shorturl_tweet />
+
+Outputs a link to twitter filling the textbox with the title and a link to your article. Parameters:
+
+* @class@ = CSS class, defaults to @tweetme@
+* @tweetpre@ = Text preceding your tweet, defaults to @Lese gerade:@ (en: @Now reading:@)
+* @linktext@ = Text in your a element, defaults to @Diesen Artikel twittern@ (en: @Tweet this article@)
